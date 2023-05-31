@@ -16,10 +16,11 @@
         </style> --}}
 
         <!--aqui se le pone el asset de estilos de livewire -->
-        @livewireStyles
+        <livewire:scripts/>
+        {{-- @livewireStyles --}}
     </head>
     <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+        <!--<div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
@@ -138,10 +139,27 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
+            
+        <!--utilizando la directiva livewire -->
+        {{-- @livewire('articles')
+        @livewire('articles.index')
+        @livewire('users-list')
+        @livewire('inline')
+        @livewire('inline-component') --}}
+
+        <!--utilizando etiquetas-->
+        <livewire:articles/>
+        <livewire:articles.index/>
+        <livewire:users-list/>    
+        <livewire:inline/>
+        <livewire:inline-component/>
         
+
+
         <!--aqui se le pone el asset de scripts de livewire -->
-        @livewireScripts
+        {{-- @livewireScripts --}}
+        <livewire:scripts/>
     </body>
 
     </html>
