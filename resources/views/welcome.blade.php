@@ -159,7 +159,7 @@
         {{-- @livewire('articles', ['h1' => 'Listado 1']) --}}
 
             
-        <livewire:articles />
+        
 
 
         <!--aqui se le pone el asset de scripts de livewire -->
