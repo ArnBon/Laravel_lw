@@ -149,16 +149,22 @@
         @livewire('inline-component') --}}
 
         <!--utilizando etiquetas-->
-        <livewire:articles/>
-        <livewire:articles.index/>
+        {{-- <livewire:articles/> --}}
+        {{-- <livewire:articles.index/>
         <livewire:users-list/>    
         <livewire:inline/>
-        <livewire:inline-component/>
+        <livewire:inline-component/> --}}
         
+        <!-- ejemplos video 4 -->
+        {{-- @livewire('articles', ['h1' => 'Listado 1']) --}}
+
+            
+        <livewire:articles />
 
 
         <!--aqui se le pone el asset de scripts de livewire -->
         {{-- @livewireScripts --}}
+        {{ $slot }} <!--con esta variable se renderiza el contenido -->
         <livewire:scripts/>
     </body>
 
